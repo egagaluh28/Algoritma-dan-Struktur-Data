@@ -1,0 +1,51 @@
+.flower {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.petal {
+  position: absolute;
+  border-radius: 50% 50% 0;
+  width: 50px;
+  height: 80px;
+  background-color: pink;
+  transform: rotate(45deg);
+  top: 60px;
+  left: 75px;
+}
+
+.petal:before {
+  content: "";
+  position: absolute;
+  border-radius: 50% 50% 0;
+  width: 50px;
+  height: 80px;
+  background-color: pink;
+  transform: rotate(90deg);
+  top: -40px;
+  left: -15px;
+}
+
+.petal:after {
+  content: "";
+  position: absolute;
+  border-radius: 50% 50% 0;
+  width: 50px;
+  height: 80px;
+  background-color: pink;
+  transform: rotate(135deg);
+  top: -40px;
+  left: 40px;
+}
+
+.center {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
